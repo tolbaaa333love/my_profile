@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>karim profile</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="shortcut icon" href="logo_profile.jpg">
+        <!--fontawesome-->
+        <script src="https://kit.fontawesome.com/efca91a968.js" crossorigin="anonymous"></script>
+
+         <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style>
+
+            @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap');
+
+            body{
+
+                padding : 0px;
+                margin : 0px;
+                font-family: 'Bowlby One SC', cursive;
+            }
+            #home{
+
+                background-image: url("home_back.jpeg");
+                background-repeat: no-repeat;
+                background-size : 100% 100%;
+                background-position: center;
+                height : 600px;
+                color : white;
+                margin-top : 50px;
+            }
+
+            #navbar{
+
+                display : flex;
+                flex-flow : row;
+                justify-content: space-between;
+                align-items : baseline;
+                color : white;
+                font-size: 15px;
+                padding : 10px;
+
+            }
+            nav #links{
+
+
+                padding-right : 30px;
+
+            }
+            nav #brand{
+
+                padding-left :30px;
+
+            }
+            nav #links a{
+
+                text-decoration : none;
+                padding-right : 20px;
+                color : white; 
+
+            }
+            #head_home{
+
+                text-align : center;
+                padding-top : 50px;
+
+            }
+            #information{
+
+                text-align : center;
+                color : black;
+                margin : 50px auto 20px auto;
+                width : 70%;
+                padding : 10px;
+                border-radius : 10px;
+
+
+            }
+            #information span{
+
+
+                padding : 10px;
+                background-color : white;
+                padding : 5px 20px;
+                border-radius : 20px;
+                border :none;
+                margin : 20px;
+
+
+            }
+            #information #last{
+
+                border-right :none;
+
+            }
+            #cv_btn{
+
+
+                text-align : center;
+                margin-top :300px; 
+
+            }
+            #cv_btn button{
+
+                border-radius : 5px;
+                background-color : black;
+                border : 2px solid white;
+                padding : 5px 20px;
+                font-size : 17px;
+                cursor: pointer;
+                transition-property:border-radius , padding;
+                transition-duration: .5s;
+
+            }
+            #cv_btn button:hover{
+
+                border-radius : 20px;
+                padding : 5px 30px;
+
+            }
+            #brand{
+
+                font-size : 25px;
+
+            }
+            #profile_image{
+
+
+                width : 300px;
+                height : 300px;
+                border-radius : 50%;
+                border : none;
+                margin : 50px;
+
+
+            }
+
+            #about , #works , #contact{
+
+                text-align :center;
+                margin-top : 100px;
+                color : white;
+                background-color : black; 
+                padding : 50px 0px;
+ 
+
+            }
+            #personal , #web , #works ul{
+
+
+                list-style : none;
+                width : 50%;
+                margin : 50px auto;
+                text-align : center;
+                padding : 0px;
+                
+
+            }
+
+            #personal li , #web li , #works ul li{
+
+
+                text-align : center;
+                font-size : 25px;
+                
+
+            }
+
+            #about h3 , #about h2{
+
+                width : 60%;
+                margin : 20px auto;
+                text-align : center;
+                font-size : 40px;
+
+
+            }
+            #about h1 , #works h1 , #contact h1{
+
+                width : 40%;
+                margin : 20px auto 50px auto;
+                font-size : 50px;
+                text-align : center; 
+
+            }
+            input[type="submit"]{
+
+                color : black;
+                padding : 5px 30px;
+                border-radius : 20px;
+                border : none;
+                cursor: pointer;
+
+            }
+            input[type="text"]{
+
+
+                display : block;
+                width : 50%;
+                margin : 30px auto;
+                border-radius : 20px;
+                border : none;
+                padding-left : 30px;
+                height : 30px;
+
+            }
+            footer{
+
+                text-align :center;
+                margin : 100px auto 50px auto;
+                color : white;
+                background-color : black; 
+                width : 50%;
+                border-radius : 20px;
+
+            }
+            footer p{
+
+                font-size: 25px;
+                padding :5px 10px;
+
+            }
+            #nav_section{
+
+                margin-bottom : 50px;
+                background-color : black;
+                padding : 0px;
+                position: static;
+            }
+        </style>
+    </head>
+    <body>
+
+       <div id="nav_section"> 
+            <nav id="navbar">
+                <div id="brand">
+                    <i class="far fa-laugh-wink"></i> karim profile
+                </div>
+                <div id="links">
+                    <a href="#home" class="all_links"><i class="fas fa-home"></i> home</a>
+                    <a href="#about" class="all_links"><i class="far fa-address-card"></i> about</a>
+                    <a href="#works" class="all_links"><i class="far fa-spider-web"></i><i class="far fa-building"></i> works</a>
+                    <a href="#contact" id="contact_link" class="all_links"><i class="fas fa-file-signature"></i> contact</a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- home section -->
+
+        <div id="home">
+
+            <div id="head_home">
+                <h1>
+                    karim , web developer
+                </h1>
+            </div>
+
+            <div id="information">
+
+                <span>iam from egypt</span>
+                <span>00201200708126</span>
+                <span id="last">tolbaaalove333@gmail.com</span>
+
+            </div>
+
+            <div id="cv_btn">
+
+                <button>Download cv</button>
+
+            </div>
+
+        </div>
+
+        <!-- about section -->
+
+        <div id="about">
+
+            <h1>About</h1>
+            <img src="my_image.jpg" alt="my_image_profile" id="profile_image">
+            <h3>Personal information</h3>
+            <ul id="personal">
+                <li>faculty of agriculture</li>
+                <li>alexandria university</li>
+                <li>department of agricultural ingineering</li>
+            </ul>
+
+            <h2>web development skills</h2>
+
+            <ul id="web">
+
+                <li>html , html5</li>
+                <li>css , css3</li>
+                <li>javascript</li>
+                <li>jquery</li>
+                <li>bootstrap</li>
+                <li>php</li>
+                <li>mysql</li>
+                <li>php laravel</li>    
+
+            </ul>
+
+        </div>
+
+        <!-- works section -->
+
+        <div id="works">
+            <h1>works</h1>
+            <ul>
+                <li><a href="https://www.selamoji.com">www.selamoji.com</a href="https://www.selamoji.com"></li>
+                <li><a href="https://www.peerinkwell.com">www.peerinkwell.com</a> underconstruction website</li>
+            </ul>
+        </div>
+
+        <!-- contact form section --> 
+
+        <div id="contact">
+            <h1>contact form</h1>
+            <form action="">
+                <input type="text" placeholder="name" id="user_name">
+                <input type="text" placeholder="email">
+                <input type="submit" name="contact" value="contact">
+            </form>
+
+        </div>
+
+        <!-- footer section -->
+
+        <footer>
+            <p>&copy; 2020 karim profile</p>
+        </footer>
+
+        <script>
+        
+            $(document).ready(function(){
+
+                var lastScrollTop = 0;
+
+                var navbar = $("#navbar");
+
+                var nav_section = $("#nav_section");
+
+                var brand = $("#brand");
+
+                var links = $("#links");
+
+                var all_links = $(".all_links");
+
+                var head_home = $("#head_home");
+
+                $(window).scroll(function(event){
+
+                var st = $(this).scrollTop();
+
+                if (st > lastScrollTop){
+                    // downscroll code
+
+                    nav_section.css({
+
+                        "position" : "fixed" , 
+                        "width" : "100%" ,
+                        "top" : "0px"  ,
+                        "border-bottom" : "1px solid white" 
+
+                    
+
+                    });
+
+                    navbar.css({
+
+                        "align-items" : "baseline"
+
+                    });
+                 
+
+                } else{
+
+                    // upscroll code
+
+                    nav_section.css({"border" : "none" , "position" : "static"});
+
+                }
+             
+                });
+
+
+            });
+        
+        </script>
+    </body>
+</html>
